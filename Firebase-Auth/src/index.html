@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase-Auth</title>
+    <script src="app.js" type= "module"></script>
+    
+</head>
+<body>
+    <header>Autentificación Firebase con Correo y Password</header>
+    <div class= "container">
+        <input id="txtEmail" type="email" placeholder= "E-mail">
+        <input id="txtPassword" type= "password" placeholder="password">
+        <button id="btnLogIn" class="btn btn-action">Login</button>
+        <button id="btnSignUp" class="btn btn-secondary">Check-in</button>
+        <button id="btnLogoUt" class="btn btn-action hide">Logout</button>
+       
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBVkn7pFa7OwEgCz0Gcs8U_7ba7BEnPbig",
+    authDomain: "fir-auth-800c9.firebaseapp.com",
+    databaseURL: "https://fir-auth-800c9.firebaseio.com",
+    projectId: "fir-auth-800c9",
+    storageBucket: "fir-auth-800c9.appspot.com",
+    messagingSenderId: "397449022924",
+    appId: "1:397449022924:web:8f9fbb36fe0efc18832169"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</script>
+    </div>
+</body>
+</html>
